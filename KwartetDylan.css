@@ -32,3 +32,8 @@ body {
     font-family: ScoreTime, serif;
     font-size: 20pt;
 }
+.kaart {
+    background-color: purple;
+    height: 100px;
+    width: 100px;
+}
