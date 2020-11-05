@@ -27,13 +27,35 @@ body {
     font-weight: normal;
     text-align: center;
 }
+.game-info-container{
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+}
+
 .game-info {
     color: white;
     font-family: ScoreTime, serif;
     font-size: 20pt;
 }
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    margin: 50px;
+    justify-content: center;    
+}
 .kaart {
     background-color: purple;
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
+}
+.achter {
+position: absolute;
+width: 150px;
+height: 150px;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
 }
