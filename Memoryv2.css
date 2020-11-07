@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.memory-spel{
+    border: 2px solid lime;
+    width: 640px;
+    height: 640px;
+    display: flex;
+}
+
+.memory-kaart{
+    border: 2px solid aqua;
+}
+
+.front-face
+.backface {
+    border: 2px solid deeppink;
+}
+
+img {
+    width: 20px;
+}
