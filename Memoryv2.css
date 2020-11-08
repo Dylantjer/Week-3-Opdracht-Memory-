@@ -4,11 +4,50 @@
     box-sizing: border-box;
 }
 
+html {
+    min-height: 100vh;
+}
+
+@font-face{
+    font-family: "Funny";
+    src: url("Assets/Packaging\ Funny.woff") format("woff"), url("Assets/Packaging\ Funny.woff2") format("woff2") 
+}
+
+@font-face{
+    font-family: "Light";
+    src: url("Assets/ModernSans-Light.woff") format("woff"), url("Assets/ModernSans-Light.woff2") format("woff2") 
+}
+
+
+
 body {
+    margin: 0;
     height: 100vh;
     display: flex;
     background: radial-gradient(rgb(0, 132, 255), rgb(38, 0, 255))
 }
+
+.paginatitel {
+    color: white;
+    font-family: Funny, serif;
+    font-size: 50pt;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.game-info-container{
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-info {
+    color: white;
+    font-family: ScoreTime, serif;
+    font-size: 20pt;
+}
+
+
 .memory-spel {
     width: 640px;
     height: 640px;
@@ -17,6 +56,8 @@ body {
     flex-wrap: wrap;
     perspective: 1000px;
 }
+
+
 
 .memory-kaart {
     width: calc(25% - 10px);
@@ -49,5 +90,4 @@ body {
 
 .voorkant {
     transform: rotateY(180deg);
-    test
 }
