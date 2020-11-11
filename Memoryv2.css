@@ -13,10 +13,6 @@ html {
     src: url("Assets/Packaging\ Funny.woff") format("woff"), url("Assets/Packaging\ Funny.woff2") format("woff2") 
 }
 
-@font-face{
-    font-family: "Light";
-    src: url("Assets/ModernSans-Light.woff") format("woff"), url("Assets/ModernSans-Light.woff2") format("woff2") 
-}
 
 .paginatitel {
     width: 640px;
@@ -28,18 +24,7 @@ html {
     text-align: center;
     
 }
-
-#tijd-over {
-    color: white;
-    font-family: Light, serif;
-    font-size: 20pt; 
-    display: table-cell;
-    text-align:right ;
     
-    
-}
-
-
 body {
     margin: 0;
     height: 100vh;
