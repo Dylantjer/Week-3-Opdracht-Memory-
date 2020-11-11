@@ -49,6 +49,7 @@ function herstelboard(){
     [alGeflipteKaart, slotBoard] = [false, false];
     [eersteKaart, tweedeKaart] = [null, null];
 }
+
 (function schudden(){
     kaarten.forEach(kaart => {
     let willekeurigPositie = Math.floor(Math.random() * 16);

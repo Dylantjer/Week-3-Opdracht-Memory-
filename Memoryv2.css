@@ -18,6 +18,26 @@ html {
     src: url("Assets/ModernSans-Light.woff") format("woff"), url("Assets/ModernSans-Light.woff2") format("woff2") 
 }
 
+.paginatitel {
+    width: 640px;
+    color: white;
+    font-family: Funny, serif;
+    font-size: 50pt;
+    font-weight: normal;
+    display: table-cell;
+    text-align: center;
+    
+}
+
+#tijd-over {
+    color: white;
+    font-family: Light, serif;
+    font-size: 20pt; 
+    display: table-cell;
+    text-align:right ;
+    
+    
+}
 
 
 body {
@@ -26,27 +46,6 @@ body {
     display: flex;
     background: radial-gradient(rgb(0, 132, 255), rgb(38, 0, 255))
 }
-
-.paginatitel {
-    color: white;
-    font-family: Funny, serif;
-    font-size: 50pt;
-    font-weight: normal;
-    text-align: justify;
-}
-
-.game-info-container{
-    grid-column: 1 / -1;
-    display: flex;
-    justify-content: space-between;
-}
-
-.game-info {
-    color: white;
-    font-family: ScoreTime, serif;
-    font-size: 20pt;
-}
-
 
 .memory-spel {
     width: 640px;
