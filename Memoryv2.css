@@ -14,6 +14,7 @@ html {
 }
 
 
+
 .paginatitel {
     width: 640px;
     color: white;
@@ -23,13 +24,16 @@ html {
     display: table-cell;
     text-align: center;
     
+    
 }
     
 body {
     margin: 0;
     height: 100vh;
     display: flex;
-    background: radial-gradient(rgb(0, 132, 255), rgb(38, 0, 255))
+    background-image: url(Assets/Pictures/beachSpain.svg);
+    background-size: 105%;
+    background-repeat: no-repeat;
 }
 
 .memory-spel {
@@ -68,7 +72,7 @@ body {
     padding: 20px;
     position: absolute;
     border-radius: 5px;
-    background-color: rgb(31, 161, 170);
+    background-color: rgba(255, 197, 72, 0.555);
     backface-visibility: hidden;
 }
 

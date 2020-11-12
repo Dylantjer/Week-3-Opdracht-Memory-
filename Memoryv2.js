@@ -26,7 +26,9 @@ function checkvoorMatch(){
 //Kaarten vergelijken
 var alsMatch = eersteKaart.dataset.naam === tweedeKaart.dataset.naam;
 alsMatch ? kaartenUitschakelen() : nietGeflipt();
+
 }
+
 
 function kaartenUitschakelen(){
     eersteKaart.removeEventListener('click', flipKaart);
