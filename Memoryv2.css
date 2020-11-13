@@ -13,6 +13,10 @@ html {
     src: url("Assets/Packaging\ Funny.woff") format("woff"), url("Assets/Packaging\ Funny.woff2") format("woff2") 
 }
 
+@font-face{
+    font-family: "Light";
+    src: url("Assets/ModernSans-Light.woff") format("woff"), url("Assets/ModernSans-Light.woff2") format("woff2") 
+}
 
 
 .paginatitel {
@@ -22,17 +26,34 @@ html {
     font-size: 50pt;
     font-weight: normal;
     display: table-cell;
-    text-align: center;
-    
-    
+    text-align: center; 
 }
     
+.taal {
+    width: 640px;
+    color: rgb(255, 255, 255);
+    font-family: Funny, serif;
+    font-size: 30pt;
+    font-weight: normal;
+    text-align: center; 
+}
+
+.spelinfo {
+    width: 640px;
+    color: rgb(255, 255, 255);
+    font-family: Light, serif;
+    font-size: 20pt;
+    font-weight: normal;
+    text-align: center; 
+}
+
+
 body {
     margin: 0;
     height: 100vh;
     display: flex;
     background-image: url(Assets/Pictures/beachSpain.svg);
-    background-size: 105%;
+    background-size: 113%;
     background-repeat: no-repeat;
 }
 
