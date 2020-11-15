@@ -4,6 +4,13 @@ var alGeflipteKaart = false;
 var slotBoard = false;
 var eersteKaart, tweedeKaart;
 
+// STARTKNOP FUNCTIE//
+function starten(){
+    console.log("doet hij het?")
+
+}
+// STARTKNOP FUNCTIE//
+
 function flipKaart(){
     if(slotBoard) return;
     if (this === eersteKaart) return;

@@ -18,6 +18,49 @@ html {
     src: url("Assets/ModernSans-Light.woff") format("woff"), url("Assets/ModernSans-Light.woff2") format("woff2") 
 }
 
+/* STYLING VOOR STARTKNOP START*/
+#clickStart { 
+padding: 10px 30px;
+font-size: 100px;
+font-family: Light, serif;
+color: white;
+border-radius: 10px;
+border-style: double;
+border-width: 5px;
+border-color: rgba(255, 0, 0, 0.637);
+background-color: rgba(255, 174, 0, 0.603);
+}
+
+.overlay-text {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color: rgb(253, 75, 30);
+    font-family: Light, Serif;
+    
+}
+.overlay-text.visible {
+    display: flex;
+    animation: overlay-grow 500ms forwards;
+}
+
+@keyframes overlay-grow {
+   from {
+       background-color: rgba(0,0,0,0);
+       font-size: 0em;
+   } 
+   to {
+    background-color: rgba(0,0,0, .8);
+    font-size: 5em;
+   }
+}
+/* STYLING VOOR STARTKNOP TOT HIER*/
 
 .paginatitel {
     width: 640px;
@@ -44,12 +87,14 @@ html {
     font-family: Light, serif;
     font-size: 20pt;
     font-weight: normal;
-    text-align: center; 
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
 }
 
 
 body {
-    margin: 0;
+    margin: 0px;
     height: 100vh;
     display: flex;
     background-image: url(Assets/Pictures/beachSpain.svg);

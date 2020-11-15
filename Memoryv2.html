@@ -13,19 +13,29 @@
 
 
     <audio autoplay hidden loop>
-        <source src="Assets/Music/BGMusicSpainv2.mp3" type="audio/mp3" id="muziek">
+        <source src="Assets/Music/BGMusicSpainv2.mp3" type="audio/mp3" id="muziek"> 
     </audio>
 
-  
+    <div class="overlay-text visible">                  <!--STARTSCHERM-->
+    <input type="button" value="Klik om te starten!" id="clickStart" onclick="starten()"> <!--STARTKNOP, MOET NOG AAN GEWERKT WORDEN-->
+    </div>
+
+
     <section class="memory-spel">
         <header>
             <h1 class="paginatitel">Memory spelen!</h1>
             <h2 class="taal"> Spaans - Español </h2>
-            <p>
-            <span class="spelinfo">Tijd: 100 Score: 0 </span>
-            </p>
-            </header>
+            
+            <section class="spelinfo">
+                <div class="spelinfo2">
+            Tijd:  <span class="time">100</span>
+                </div><div class="spelinfo2"> 
+            Punten: <span class="score">0</span>
+                </div> 
+        </section>
+        </header>
         
+
 
     
     <div class="memory-kaart" data-naam="goeiemorgen">
@@ -98,16 +108,6 @@
 
 </section>
     
-
-    
-
-
-
-
-
-
-
-
 
 <script src="Memoryv2.js"></script>
 </body>
