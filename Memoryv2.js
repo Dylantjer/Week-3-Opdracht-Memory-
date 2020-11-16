@@ -6,12 +6,11 @@ var eersteKaart, tweedeKaart;
 
 
 function clickStart(){
-    var starten = document.getElementById("voorGrond");
-    starten.style.visibility = "hidden";
-}
+    document.getElementById("voorGrond").style.visibility = "hidden";
+
 //-----------------------------------------------------------------------------------
 // Set the date we're counting down to
-var countDownDate = new Date().getTime() + 5000;
+var countDownDate = new Date().getTime() + 600000;
 
 
 
@@ -26,27 +25,29 @@ var x = setInterval(function() {
   document.getElementById("time").innerHTML = seconds + " Seconden ";
     console.log(distance);
   // If the count down is finished, write some text
-  if (distance < 0) {
+  if (distance < 541000) {
    // distance = 1000;
     alert("JUEGO TERMINADO!");
     stop();
     document.getElementById("time").innerHTML = "Tijd Voorbij";
-    countDownDate = new Date().getTime() + 500000000;
-  }
-}, 1000);
+    location.reload();
+        }
+    }, 1000);
+}
 
-//------------------------------------------------------------
 function stop(){
     console.log("Stop");
-    clearInterval(x);
+    clearInterval(1);
 }
+//------------------------------------------------------------
+
 function flipKaart(){
     if(slotBoard) return;
     if (this === eersteKaart) return;
 this.classList.add("flip");
 
 if(!alGeflipteKaart){
-   //Eerste klik
+   //Eerste klik+
    alGeflipteKaart = true;
     eersteKaart = this;
 
