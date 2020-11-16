@@ -19,47 +19,20 @@ html {
 }
 
 /* STYLING VOOR STARTKNOP START*/
-#clickStart { 
-padding: 10px 30px;
+#voorGrond { 
+padding: 530px 350px;
 font-size: 100px;
 font-family: Light, serif;
 color: white;
-border-radius: 10px;
-border-style: double;
-border-width: 5px;
-border-color: rgba(255, 0, 0, 0.637);
 background-color: rgba(255, 174, 0, 0.603);
+position: absolute;
+left: 0%;
+right: 40%; 
+top: 0%;
+bottom: 40%;
+z-index: 8;
 }
 
-.overlay-text {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    color: rgb(253, 75, 30);
-    font-family: Light, Serif;
-    
-}
-.overlay-text.visible {
-    display: flex;
-    animation: overlay-grow 500ms forwards;
-}
-
-@keyframes overlay-grow {
-   from {
-       background-color: rgba(0,0,0,0);
-       font-size: 0em;
-   } 
-   to {
-    background-color: rgba(0,0,0, .8);
-    font-size: 5em;
-   }
-}
 /* STYLING VOOR STARTKNOP TOT HIER*/
 
 .paginatitel {

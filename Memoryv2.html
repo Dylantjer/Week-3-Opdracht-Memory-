@@ -15,10 +15,13 @@
     <audio autoplay hidden loop>
         <source src="Assets/Music/BGMusicSpainv2.mp3" type="audio/mp3" id="muziek"> 
     </audio>
+    
+    <input type="button" value="Klik om te starten!" id="voorGrond" onclick="clickStart()">
+    
 
-    <div class="overlay-text visible">                  <!--STARTSCHERM-->
-    <input type="button" value="Klik om te starten!" id="clickStart" onclick="starten()"> <!--STARTKNOP, MOET NOG AAN GEWERKT WORDEN-->
-    </div>
+
+
+
 
 
     <section class="memory-spel">
@@ -28,19 +31,16 @@
             
             <section class="spelinfo">
                 <div class="spelinfo2">
-            Tijd:  <span class="time">100</span>
+            <span id="time">1:00</span>
                 </div><div class="spelinfo2"> 
             Punten: <span class="score">0</span>
                 </div> 
         </section>
         </header>
-        
-
-
-    
+            
     <div class="memory-kaart" data-naam="goeiemorgen">
         
-        <img class="voorkant" src="Assets/Illustraties (35mm)/Goeiemorgen.svg" alt="goeiemorgen" >
+        <img class="voorkant" src="Assets/Illustraties (35mm)/Goeiemorgen.svg" alt="goeiemorgen"> 
         <img class="achterkant" src="Assets/Illustraties (35mm)/Spaansvlag.svg" alt="Spaansvlag">
     </div> <!--KAART 1=============================================================================-->
     <div class="memory-kaart" data-naam="goeiemorgen">
