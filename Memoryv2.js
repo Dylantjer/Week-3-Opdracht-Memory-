@@ -4,13 +4,42 @@ var alGeflipteKaart = false;
 var slotBoard = false;
 var eersteKaart, tweedeKaart;
 
-// STARTKNOP FUNCTIE//
-function starten(){
-    console.log("doet hij het?")
 
+function clickStart(){
+    var starten = document.getElementById("voorGrond");
+    starten.style.visibility = "hidden";
 }
-// STARTKNOP FUNCTIE//
+//-----------------------------------------------------------------------------------
+// Set the date we're counting down to
+var countDownDate = new Date().getTime() + 5000;
 
+
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("time").innerHTML = seconds + " Seconden ";
+    console.log(distance);
+  // If the count down is finished, write some text
+  if (distance < 0) {
+   // distance = 1000;
+    alert("JUEGO TERMINADO!");
+    stop();
+    document.getElementById("time").innerHTML = "Tijd Voorbij";
+    countDownDate = new Date().getTime() + 500000000;
+  }
+}, 1000);
+
+//------------------------------------------------------------
+function stop(){
+    console.log("Stop");
+    clearInterval(x);
+}
 function flipKaart(){
     if(slotBoard) return;
     if (this === eersteKaart) return;
