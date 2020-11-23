@@ -27,7 +27,7 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 541000) {
    // distance = 1000;
-    alert("JUEGO TERMINADO!");
+    alert("JUEGO TERMINADO! / SPEL IS OVER!");
     stop();
     document.getElementById("time").innerHTML = "Tijd Voorbij";
     location.reload();
@@ -58,20 +58,25 @@ if(!alGeflipteKaart){
         checkvoorMatch();       
 }   
 
-
 function checkvoorMatch(){
 //Kaarten vergelijken
 var alsMatch = eersteKaart.dataset.naam === tweedeKaart.dataset.naam;
 alsMatch ? kaartenUitschakelen() : nietGeflipt();
 
 }
-
+function matchGeluidsFx(){
+    var speelAudio = document.getElementById("tweeKaartenSfx");
+}
 
 function kaartenUitschakelen(){
     eersteKaart.removeEventListener('click', flipKaart);
     tweedeKaart.removeEventListener('click', flipKaart);
+         
+        console.log("dit zijn er 2");
 
+// HIER MOET EEN TELLER KOMEN VOOR DE PUNTEN EN EINDE SPEL VOOR REFRESH// 
     herstelboard();
+    matchGeluidsFx();
 }
 
 function nietGeflipt(){
